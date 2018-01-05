@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">GroupExpenseTracker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="STATISTICS">STATISTICS</string>
+    <string name="CALCULATOR">CALCULATOR</string>
+    <string name="registerMessage">Give name from which your friends know you.</string>
+    <string name="nameHint">Enter Name</string>
+    <string name="numberHint">Enter PhoneNo.</string>
+    <string name="add">Add</string>
+    <string name="alreadyFriend">This user is already friend of yours.</string>
+    <string name="alreadyExist">Entered number is urs.</string>
+    <string name="groupName">Enter group name</string>
+    <string name="search">Search..</string>
+    <string name="CREATE">CREATE</string>
+    <string name="GPSAlertDialogTitle">GPSAlertDialogTitle</string>
+    <string name="GPSAlertDialogMessage">GPSAlertDialogMessage</string>
+    <string name="action_settings">action_settings</string>
+    <string name="cancel">cancel</string>
+
+
+    <!--TOAST MESSAGES-->
+    <string name="toastGroupName">Please enter groupname</string>
+    <string name="toastAddAtleastOneMember">Please add atleast one member in group</string>
+    <string name="toastGroupCreated">Group created successfully</string>
+    <string name="toastEnterName">Please enter name</string>
+    <string name="toastEnterNumber">Please enter number</string>
+    <string name="toastEnterNumberLength">Please enter valid phone no.</string>
+    <string name="toastServerError">Server not responding please try agian later.</string>
+    <string name="toastExpenseUser">User Distribution</string>
+
+
+    <!--PROGRESS BAR MESSAGES-->
+
+    <string name="please_wait">Please wait.</string>
+    <string name="loadingFriend">Loading Friends..</string>
+    <string name="creatingGroup">Creating group..</string>
+    <string name="addingFriend">Adding friend..</string>
+    <string name="loadinggroups">Loading Groups..</string>
+
+
+    <!--DRAWER TITLES-->
+    <string name="HOME">Home</string>
+    <string name="FRIENDS">Friends</string>
+    <string name="EXPENSES">Add Expense</string>
+    <string name="TRACKING">Tracking</string>
+    <string name="TRIPDETAILS">Trip Details</string>
+    <string name="GROUP">Trips</string>
+    <string name="TRIPMEMORIES">Trip Memories</string>
+    <string name="CHAT">Chat</string>
+    <string name="SHARE">Share</string>
+    <string name="INVITE">Invite</string>
+    <string name="FEEDBACK">Feedback</string>
+    <string name="ABOUTUS">About Us</string>
+    <string name="OTHER">Others</string>
+    <string name="checkingphoneno">Checking Phone No..</string>
+    <string name="loadingUser">Loading User..</string>
+    <string name="noGroupsFind">No Groups Found</string>
+    <string name="noFriendsFound">No Friends Found</string>
+    <string name="addParticipants">Add Participants</string>
+    <string name="googleError">Google Play Services error.</string>
+    <string name="loginFail">Login failed..</string>
+
+
+    <!--CALCULATOR-->
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="div">/</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="mul">*</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="sub">-</string>
+    <string name="clear">C</string>
+    <string name="zero">0</string>
+    <string name="equal">=</string>
+    <string name="plus">+</string>
+    <string name="backspace">Bsp</string>
+    <string name="dot">.</string>
+    <string name="blank"></string>
+    <string name="blank2"></string>
+    <!--<string name="seven">7</string>-->
+    <!--<string name="seven">7</string>-->
+    <!--<string name="seven">7</string>-->
+    <!--<string name="seven">7</string>-->
+
+
+</resources>

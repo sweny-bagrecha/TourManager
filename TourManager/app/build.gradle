@@ -1,0 +1,89 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        applicationId "com.example.user.groupexpensetracker"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "2g"
+    }
+        useLibrary 'org.apache.http.legacy'
+
+}
+
+repositories {
+    mavenCentral() // jcenter() works as well because it pulls from Maven Central
+}
+dependencies
+        {
+            compile fileTree(dir: 'libs', include: ['*.jar'])
+
+            compile('com.digits.sdk.android:digits:2.0.0@aar')
+
+                    {
+                        transitive = true;
+                    }
+
+
+
+            compile 'de.hdodenhof:circleimageview:2.1.0'
+            compile 'de.hdodenhof:circleimageview:2.1.0'
+            compile 'com.android.support:appcompat-v7:25.0.1'
+            compile 'com.android.support:recyclerview-v7:25.0.1'
+            compile 'com.android.support:cardview-v7:25.0.1'
+            compile 'com.github.bumptech.glide:glide:3.7.0'
+            compile 'com.android.support:design:25.0.1'
+            compile 'com.android.support:support-v4:25.0.1'
+            compile 'com.google.android.gms:play-services-maps:10.0.1'
+            compile 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+            compile 'com.firebase:firebase-client-android:2.4.0'
+            compile 'com.google.firebase:firebase-database:10.0.1'
+            compile 'com.google.firebase:firebase-storage:10.0.1'
+            compile 'com.google.firebase:firebase-auth:10.0.1'
+            compile 'com.google.firebase:firebase-core:10.0.1'
+            compile 'com.google.firebase:firebase-messaging:10.0.1'
+            compile 'com.afollestad.material-dialogs:core:0.9.1.0'
+            compile 'com.google.android.gms:play-services-auth:10.0.1'
+            testCompile 'junit:junit:4.12'
+            compile 'org.apache.httpcomponents:httpcore:4.4.1'
+            compile 'org.apache.httpcomponents:httpclient:4.5'
+            compile 'com.google.android.gms:play-services-location:10.0.1'
+
+        }
+apply plugin: 'com.google.gms.google-services'

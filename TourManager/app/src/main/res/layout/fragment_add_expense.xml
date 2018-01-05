@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AddExpenseFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtexpensename"
+          android:text="Expense Name"
+          android:layout_marginTop="16dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="12sp"/>
+            <EditText
+                android:id="@+id/edtexpensename"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:background="@drawable/edittextexpense_bg"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:hint="Expense Name" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimaryDark"
+    android:text="Group Name"
+    android:layout_marginTop="16dp"
+    android:textSize="12sp"
+    android:id="@+id/txtexpensetype"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittextexpense_bg"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spinnergroup"
+        android:layout_gravity="center_vertical" />
+
+
+</LinearLayout>
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:text="Total Amount"
+           android:id="@+id/txttotalamount"
+           android:textColor="@color/colorPrimaryDark"
+           android:textSize="12sp"/>
+            <EditText
+                android:id="@+id/edttotalamount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:background="@drawable/edittextexpense_bg"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:hint="Total Amount" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Expense Type"
+            android:id="@+id/txtgroup"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextexpense_bg"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/spinner"
+                android:layout_gravity="center_vertical" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmembers"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="16dp"
+            android:text="MEMBERS"/>
+<View
+    android:layout_marginTop="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#000000"
+    android:id="@+id/view"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerList"></android.support.v7.widget.RecyclerView>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:id="@+id/btnNext"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
+</ScrollView>

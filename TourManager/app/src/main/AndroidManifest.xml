@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.groupexpensetracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.example.user.groupexpensetracker.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.user.groupexpensetracker.permission.MAPS_RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-library android:name="com.google.android.maps" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- <service -->
+        <!-- android:name=".commanclasses.LocationGetService" -->
+        <!-- android:enabled="true" /> -->
+        <service
+            android:name=".bean.ServiceTask"
+            android:enabled="true" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <!-- <service -->
+        <!-- android:name=".bean.ServiceTask" -->
+        <!-- android:enabled="true" /> -->
+
+        <activity android:name=".activity.OTPActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="af4cb44d5de40238efb1f7f34d18db9827ab0c65" />
+
+        <activity android:name=".activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AddMembersActivity" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDpDOZS_FqVtLCyZt6uNv2dAiwFjXbulNo" />
+
+        <activity android:name=".activity.PieChartActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity
+            android:name=".activity.AddGroupActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.DistributionExpenseActivity" />
+        <activity android:name=".activity.ChatRoomActivity" />
+        <activity android:name=".activity.GroupDetailsActivity" />
+        <activity android:name=".activity.TripDetailsActivity" />
+        <activity android:name=".activity.ShowWebView" />
+        <activity android:name=".activity.AboutUs"></activity>
+    </application>
+
+</manifest>

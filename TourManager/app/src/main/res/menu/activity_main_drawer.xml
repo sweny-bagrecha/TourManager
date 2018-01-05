@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_action_account_child"
+            android:title="@string/HOME" />
+        <item
+            android:id="@+id/nav_members"
+            android:icon="@drawable/ic_action_account_child"
+            android:title="@string/FRIENDS" />
+        <item
+            android:id="@+id/nav_group"
+            android:icon="@drawable/ic_users_group"
+            android:title="@string/GROUP" />
+        <item
+            android:id="@+id/nav_addexpense"
+            android:icon="@drawable/ic_action_account_balance_wallet"
+            android:title="@string/EXPENSES" />
+        <item
+            android:id="@+id/nav_track_your_friend"
+            android:icon="@drawable/ic_device_gps_fixed"
+            android:title="@string/TRACKING" />
+        <!--<item-->
+            <!--android:id="@+id/nav_tripdetails"-->
+            <!--android:icon="@drawable/ic_action_wallet_travel"-->
+            <!--android:title="@string/TRIPDETAILS" />-->
+        <item
+            android:id="@+id/nav_tripmemories"
+            android:icon="@drawable/ic_image_photo_camera"
+            android:title="@string/TRIPMEMORIES" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chatting"
+            android:title="Chat"/>
+
+
+    </group>
+
+    <item android:title="@string/OTHER">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_social_share"
+                android:title="@string/SHARE" />
+            <item
+                android:id="@+id/nav_invite"
+                android:icon="@drawable/ic_add_user"
+                android:title="@string/INVITE" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="@string/FEEDBACK" />
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/ic_question_mark"
+                android:title="@string/ABOUTUS" />
+        </menu>
+    </item>
+
+</menu>
